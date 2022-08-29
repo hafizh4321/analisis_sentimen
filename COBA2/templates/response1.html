@@ -1,0 +1,19 @@
+<h3>{{positif}}% Positif || {{negatif}}% Negatif</h3>
+<table class="table table-striped custab">
+  <thead>
+    <tr>
+      <th>tweet</th>
+      <th>sentiment</th>
+      <th>confidence</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for row in results %}
+    <tr>
+      <td>{{row.tweet}}</td>
+      <td>{{row.sentiment}}</td>
+      <td>{{row.confidence}}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
